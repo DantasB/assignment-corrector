@@ -1,0 +1,14 @@
+name: 'Assignment Corrector'
+description: 'Evaluates your assignment and returns the grade'
+inputs:
+  programming-language:
+    description: 'The selected programming language'
+    required: true
+outputs:
+  time:
+    description: 'The time we received your file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.programming-language }}
