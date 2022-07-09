@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  assignment_corrector_job:
+    runs-on: ubuntu-latest
+    name: A job that corrects your exercises
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Evaluate the code
+        id: results
+        uses: ./
+        with:
+          programming-language: 'python'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.results.outputs.time }}"
