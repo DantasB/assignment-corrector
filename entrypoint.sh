@@ -1,8 +1,18 @@
 #!/bin/sh -l
 
-echo "The selected programming language was $1! :rocket:"
+curl -Lo answers.zip $2
+if unzip -t answers.zip > /dev/null; then
+    unzip answers.zip -d answers
+    rm answers.zip
+else
+    echo "The file is not unzipable"
+    exit 1
+fi
 
-echo "The code location is $2"
+for file in answers/*
+do
+    echo "File: $file"
+done 
 
 time=$(date)
 

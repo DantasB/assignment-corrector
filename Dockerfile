@@ -12,7 +12,9 @@ RUN apk add --no-cache \
   rust \
   gcc \
   elixir \
-  gfortran
+  gfortran \
+  unzip \
+  zip
 
 COPY entrypoint.sh /entrypoint.sh
 
