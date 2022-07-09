@@ -59,4 +59,5 @@ The time we received your task
 uses: actions/assignment-corrector@v0.0.1-alpha
 with:
     programming-language: 'python'
+    answer-location: ${{ secrets.AnswerLocation }}
 ```
