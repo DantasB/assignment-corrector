@@ -20,7 +20,7 @@ You can take a look in the diagram below to see how the action works.
 
 ### `answer-location`
 
-**Required** The url of the zip answers files and your inputs.
+**Required** The url of the zip answers files and your inputs. The url must be located in a secret called `ANSWERLOCATION`.
 The structure of the zip file has to be the following:
 
 ```
