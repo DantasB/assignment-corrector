@@ -1,12 +1,13 @@
 #!/bin/sh -l
 
 validate_answers_folder() {
-    if [ ! -d answers/* ]; then
-        echo "Answers folder does not contain subfolders with the answers"
+    subdircount=$(find answers/ -maxdepth 1 -type d | wc -l)
+    if [[ "$subdircount" -eq 1 ]]
+        echo "The answers folder does not contain any subdirectories. Please create a subdirectory for each question."
         exit 1
     fi
-    
-    for folder in $(ls -d answers/*)
+
+    for folder in $(ls -d answers/*/)
     do
         # Check if the folder doesn't have 2 files
         if [ $(ls -1 $folder | wc -l) -ne 2 ]; then
