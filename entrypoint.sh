@@ -2,7 +2,7 @@
 
 validate_answers_folder() {
     subdircount=$(find answers/ -maxdepth 1 -type d | wc -l)
-    if [[ "$subdircount" -eq 1 ]]
+    if [[ "$subdircount" -eq 1 ]]; then
         echo "The answers folder does not contain any subdirectories. Please create a subdirectory for each question."
         exit 1
     fi
