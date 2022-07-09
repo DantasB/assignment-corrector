@@ -5,8 +5,10 @@ RUN apk add --no-cache \
   bash \
   curl \
   git \
-  py-pip \
   wget \
+  unzip \
+  zip \
+  py-pip \
   nodejs \
   ruby \
   rust \

@@ -16,7 +16,25 @@ You can take a look in the diagram below to see how the action works.
 
 ### `programming-language`
 
-**Required** The name of the programming language.
+**Required** The name of the programming language that you want to use.
+
+### `answer-location`
+
+**Required** The url of the zip answers files and your inputs. The url must be located in a secret called `ANSWERLOCATION`.
+The structure of the zip file has to be the following:
+
+```
+question_1/
+    ├─── answer.py
+    └─── input.txt
+question_2/
+    ├─── answer.py
+    └─── input.txt
+question_3/
+    ├─── answer.py
+    └─── input.txt
+```
+Note that the file format has to be the same as the programming language format. For example, if you are using python, the file format has to be `.py`.
 
 ## Outputs
 

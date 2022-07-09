@@ -12,6 +12,7 @@ jobs:
         uses: ./
         with:
           programming-language: 'python'
+          answer-location: ${{ secrets.AnswerLocation }}
       - name: Correction output
         run: |
           echo "Correction for user ${{ github.actor }}"
