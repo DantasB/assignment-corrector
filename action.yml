@@ -2,14 +2,14 @@ name: 'Assignment Corrector'
 description: 'Evaluates your assignment and returns the grade'
 inputs:
   programming-language:
-    description: 'The selected programming language'
+    description: 'The selected programming language. Should be written as CapsLock. Ex: PYTHON, RUST, GOLANG.'
     required: true
   answer-location:
-    description: 'The url where the zip with every answer is located'
+    description: 'The url where the answers and inputs are located as a zip file.'
     required: true
 outputs:
   time:
-    description: 'The time we received your file'
+    description: 'The time we received your file.'
 runs:
   using: 'docker'
   image: 'Dockerfile'

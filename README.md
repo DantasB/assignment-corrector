@@ -17,6 +17,17 @@ You can take a look in the diagram below to see how the action works.
 ### `programming-language`
 
 **Required** The name of the programming language that you want to use.
+The name must be the same of the language of the answers file.
+
+The languages supported are:
+- `python`
+- `javascript`
+- `ruby`
+- `rust`
+- `c`
+- `c++`
+- `elixir`
+- `fortran`
 
 ### `answer-location`
 
