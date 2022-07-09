@@ -3,7 +3,7 @@ on: [push]
 jobs:
   assignment_corrector_job:
     runs-on: ubuntu-latest
-    name: A job that corrects your exercises
+    name: Exercise Corrector
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -12,5 +12,7 @@ jobs:
         uses: ./
         with:
           programming-language: 'python'
-      - name: Get the output time
-        run: echo "The time was ${{ steps.results.outputs.time }}"
+      - name: Correction output
+        run: |
+        echo "Correction for user: ${{ github.actor }}"
+        echo "The time was ${{ steps.results.outputs.time }}"
