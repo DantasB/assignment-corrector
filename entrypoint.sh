@@ -1,7 +1,12 @@
 #!/bin/sh -l
 
 validate_answers_folder() {
-    for folder in $(ls -d answers/*/)
+    if [ ! -d answers/* ]; then
+        echo "Answers folder does not contain subfolders with the answers"
+        exit 1
+    fi
+    
+    for folder in $(ls -d answers/*)
     do
         # Check if the folder doesn't have 2 files
         if [ $(ls -1 $folder | wc -l) -ne 2 ]; then
