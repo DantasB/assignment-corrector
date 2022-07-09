@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  assignment_corrector_job:
+    runs-on: ubuntu-latest
+    name: Exercise Corrector
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Evaluate the code
+        id: results
+        uses: ./
+        with:
+          programming-language: 'python'
+      - name: Correction output
+        run: |
+          echo "Correction for user ${{ github.actor }}"
+          echo "The time was ${{ steps.results.outputs.time }}"
