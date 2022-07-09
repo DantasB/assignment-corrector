@@ -22,6 +22,8 @@ The time we received your task
 
 ## Use Cases
 
+```
 uses: actions/assignment-corrector@v0.0.1-alpha
 with:
     programming-language: 'python'
+```
