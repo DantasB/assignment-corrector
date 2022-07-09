@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
 curl -Lo answers.zip $2
-if unzip -t answers.zip > /dev/null; then
-    unzip answers.zip -d answers
+if unzip -qt answers.zip > /dev/null; then
+    unzip -q answers.zip -d answers
     rm answers.zip
 else
     echo "The answers url input is not a valid zip file"
