@@ -31,21 +31,20 @@ The languages supported are:
 
 ### `answer-location`
 
-**Required** The url of the zip answers files and your inputs. The url must be located in a secret called `ANSWERLOCATION`.
+**Required** The url of the zip answers and your inputs. The url must be located in a secret called `ANSWERLOCATION`.
 The structure of the zip file has to be the following:
 
 ```
 question_1/
-    ├─── answer.py
+    ├─── answer.txt
     └─── input.txt
 question_2/
-    ├─── answer.py
+    ├─── answer.txt
     └─── input.txt
 question_3/
-    ├─── answer.py
+    ├─── answer.txt
     └─── input.txt
 ```
-Note that the file format has to be the same as the programming language format. For example, if you are using python, the file format has to be `.py`.
 
 ## Outputs
 
