@@ -14,5 +14,5 @@ jobs:
           programming-language: 'python'
       - name: Correction output
         run: |
-        echo "Correction for user: ${{ github.actor }}"
-        echo "The time was ${{ steps.results.outputs.time }}"
+          echo "Correction for user ${{ github.actor }}"
+          echo "The time was ${{ steps.results.outputs.time }}"
