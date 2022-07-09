@@ -8,6 +8,10 @@ The objective of this action is to help the teacher of any language to correct y
 
 The idea is that the student will open a pull request to the repository of activities and them, given a set of tests, the action will run them on a container and compare the results between the two inputs.
 
+You can take a look in the diagram below to see how the action works.
+
+![diagram](diagram/action_functionality.png)
+
 ## Inputs
 
 ### `programming-language`
