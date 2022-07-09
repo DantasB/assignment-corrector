@@ -35,15 +35,16 @@ The languages supported are:
 The structure of the zip file has to be the following:
 
 ```
-question_1/
-    ├─── answer.txt
-    └─── input.txt
-question_2/
-    ├─── answer.txt
-    └─── input.txt
-question_3/
-    ├─── answer.txt
-    └─── input.txt
+exercises/
+├──question_1/
+│       ├─── answer.txt
+│       └─── input.txt
+├──question_2/
+│       ├─── answer.txt
+│       └─── input.txt
+└──question_3/
+        ├─── answer.txt
+        └─── input.txt
 ```
 
 ## Outputs
