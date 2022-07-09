@@ -5,7 +5,7 @@ if unzip -t answers.zip > /dev/null; then
     unzip answers.zip -d answers
     rm answers.zip
 else
-    echo "The file is not unzipable"
+    echo "The answers url input is not a valid zip file"
     exit 1
 fi
 
